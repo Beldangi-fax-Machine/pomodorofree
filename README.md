@@ -1,4 +1,4 @@
-# 🍅 Pomofocus - Pomodoro Timer
+# Pomofocus - Pomodoro Timer
 
 A beautiful, feature-rich Pomodoro timer built with vanilla HTML, CSS, and JavaScript. Stay focused and productive with customizable work sessions, break tracking, and delightful audio feedback!
 
@@ -7,44 +7,46 @@ A beautiful, feature-rich Pomodoro timer built with vanilla HTML, CSS, and JavaS
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
 
-## ✨ Features
+## Features
 
-### 🎯 Core Timer Functionality
+### Core Timer Functionality
 - **45-minute work sessions** (customizable)
 - **15-minute short breaks**
 - **30-minute long breaks**
 - **Auto-switching** between work and break modes
 - **Real-time clock** display
 
-### 📋 Task Management
+### Task Management
 - **Add unlimited tasks** with custom pomodoro counts
 - **Progress tracking** for each task
 - **Visual completion indicators**
 - **Smart task cycling** through your todo list
 
-### 🎨 Customization
+### Customization
 - **6 beautiful background themes**: Red, Blue, Green, Purple, Orange, Teal
+- **Animated gradient backgrounds** with optional toggle
+- **Customizable timer durations** for all modes
 - **Persistent settings** - your preferences are saved locally
 - **Clean, modern UI** with smooth animations
 
-### 🔔 Audio Experience
+### Audio Experience
 - **Break start chime** - Pleasant C major chord
 - **Break end chime** - Motivational G major chord
 - **Muteable sounds** - Toggle audio on/off in settings
 - **Browser notifications** support
 
-### ⏰ Smart Features
+### Smart Features
 - **Estimated completion time** - See exactly when you'll finish all tasks
 - **Auto-updating timers** - Completion time updates every minute
 - **Task progress tracking** - Visual indicators for completed pomodoros
 - **Responsive design** - Works perfectly on desktop and mobile
 
-## 🚀 Quick Start
+## Quick Start
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/pomofocus.git
-   cd pomofocus
+   git clone https://github.com/Beldangi-fax-Machine/pomodorofree.git
+   cd pomodorofree
    ```
 
 2. **Open in your browser**
@@ -53,18 +55,18 @@ A beautiful, feature-rich Pomodoro timer built with vanilla HTML, CSS, and JavaS
    ```
    Or simply double-click `index.html`!
 
-3. **Start being productive!** 🎯
+3. **Start being productive!**
    - Add your first task
    - Click START to begin a 45-minute work session
    - Take breaks when prompted
    - Watch your progress grow!
 
-## 🎮 How to Use
+## How to Use
 
 ### Adding Tasks
 1. Type your task in the input field
-2. Click the **+** button or press Enter
-3. Click the **⋮** menu to set how many pomodoros the task needs
+2. Use the arrow buttons to set pomodoro count
+3. Click the + button or press Enter
 4. Watch your progress as you complete pomodoros!
 
 ### Timer Controls
@@ -74,21 +76,28 @@ A beautiful, feature-rich Pomodoro timer built with vanilla HTML, CSS, and JavaS
 - **Mode Buttons** - Switch between Pomodoro, Short Break, Long Break
 
 ### Settings
-Click the **⚙️ Settings** button to:
+Click the **Settings** button to:
 - Choose your favorite background color
+- Toggle animated backgrounds on/off
+- Customize timer durations
 - Toggle auto-switching between work/break
 - Enable/disable chime sounds
 - All settings are saved automatically!
 
-## 🎵 Audio Guide
+### Task Management
+- **Edit pomodoros** - Click the menu button on any task
+- **Delete tasks** - Remove tasks instantly with the delete option
+- **Track progress** - Visual indicators show completion status
+
+## Audio Guide
 
 | Sound | When It Plays | Description |
 |-------|---------------|-------------|
-| 🔔 Break Start Chime | Work session ends, break begins | Pleasant C-E-G chord sequence |
-| 🎵 Break End Chime | Break ends, work resumes | Motivational G-B-D chord sequence |
-| 📢 Completion Beep | Any timer completes | Simple notification sound |
+| Break Start Chime | Work session ends, break begins | Pleasant C-E-G chord sequence |
+| Break End Chime | Break ends, work resumes | Motivational G-B-D chord sequence |
+| Completion Beep | Any timer completes | Simple notification sound |
 
-## 🛠️ Technical Details
+## Technical Details
 
 ### Built With
 - **HTML5** - Semantic structure and accessibility
@@ -98,34 +107,34 @@ Click the **⚙️ Settings** button to:
 - **Local Storage** - Persistent settings and preferences
 
 ### Browser Support
-- ✅ Chrome 60+
-- ✅ Firefox 55+
-- ✅ Safari 11+
-- ✅ Edge 79+
+- Chrome 60+
+- Firefox 55+
+- Safari 11+
+- Edge 79+
 
 ### File Structure
 ```
-pomofocus/
+pomodorofree/
 ├── index.html          # Main application
 ├── style.css           # Styling and themes
 ├── script.js           # Timer logic and features
 └── README.md           # This file!
 ```
 
-## 🎨 Themes
+## Themes
 
 Choose from 6 beautiful gradient themes:
 
 | Theme | Preview | Mood |
 |-------|---------|------|
-| 🔴 Red | `#d73e3e → #b71c1c` | Classic & Focused |
-| 🔵 Blue | `#1976d2 → #0d47a1` | Calm & Professional |
-| 🟢 Green | `#388e3c → #1b5e20` | Fresh & Energizing |
-| 🟣 Purple | `#7b1fa2 → #4a148c` | Creative & Inspiring |
-| 🟠 Orange | `#f57c00 → #e65100` | Warm & Motivating |
-| 🔷 Teal | `#00695c → #004d40` | Cool & Tranquil |
+| Red | `#d73e3e → #b71c1c` | Classic & Focused |
+| Blue | `#1976d2 → #0d47a1` | Calm & Professional |
+| Green | `#388e3c → #1b5e20` | Fresh & Energizing |
+| Purple | `#7b1fa2 → #4a148c` | Creative & Inspiring |
+| Orange | `#f57c00 → #e65100` | Warm & Motivating |
+| Teal | `#00695c → #004d40` | Cool & Tranquil |
 
-## 🤝 Contributing
+## Contributing
 
 Love this project? Want to make it even better? Contributions are welcome!
 
@@ -136,34 +145,34 @@ Love this project? Want to make it even better? Contributions are welcome!
 5. **Open a Pull Request**
 
 ### Ideas for Contributions
-- 🎨 New theme colors
-- 🔊 Additional chime sounds
-- 📊 Statistics and reports
-- 🌙 Dark/light mode toggle
-- 📱 Progressive Web App features
-- 🎯 Focus mode improvements
+- New theme colors
+- Additional chime sounds
+- Statistics and reports
+- Dark/light mode toggle
+- Progressive Web App features
+- Focus mode improvements
 
-## 📝 License
+## License
 
 This project is open source and available under the [MIT License](LICENSE).
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Inspired by the classic Pomodoro Technique by Francesco Cirillo
 - UI design inspired by Pomofocus.io
 - Icons by Font Awesome
-- Built with ❤️ for productivity enthusiasts
+- Built with love for productivity enthusiasts
 
-## 📞 Support
+## Support
 
-Having issues or questions? 
+Having issues or questions?
 
-- 🐛 **Found a bug?** [Open an issue](https://github.com/yourusername/pomofocus/issues)
-- 💡 **Have an idea?** [Start a discussion](https://github.com/yourusername/pomofocus/discussions)
-- ⭐ **Love it?** Give it a star!
+- **Found a bug?** [Open an issue](https://github.com/Beldangi-fax-Machine/pomodorofree/issues)
+- **Have an idea?** [Start a discussion](https://github.com/Beldangi-fax-Machine/pomodorofree/discussions)
+- **Love it?** Give it a star!
 
 ---
 
-**Happy Pomodoro-ing!** 🍅✨
+**Happy Pomodoro-ing!**
 
 *Stay focused, stay productive, stay awesome!*
