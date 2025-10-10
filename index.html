@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomofocus - Pomodoro Timer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <i class="fas fa-check-circle logo-icon"></i>
+            <h1>Pomofocus</h1>
+        </div>
+        <div class="header-right">
+            <div class="current-time">
+                <i class="fas fa-clock"></i>
+                <span id="current-time">--:--</span>
+            </div>
+            <button class="header-btn" id="settings-btn"><i class="fas fa-cog"></i> Setting</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="timer-section">
+            <div class="timer-modes">
+                <button class="mode-btn active" data-mode="pomodoro">Pomodoro</button>
+                <button class="mode-btn" data-mode="short-break">Short Break</button>
+                <button class="mode-btn" data-mode="long-break">Long Break</button>
+            </div>
+            
+            <div class="timer-display">
+                <span id="timer">45:00</span>
+            </div>
+            
+            <button id="timer-btn" class="timer-button">START</button>
+            
+            <div class="current-task">
+                <span id="current-task-number">#1</span>
+                <span id="current-task-name">Add your first task</span>
+            </div>
+        </div>
+
+        <div class="tasks-section">
+            <div class="tasks-header">
+                <h3>Tasks</h3>
+                <button class="tasks-menu-btn"><i class="fas fa-ellipsis-v"></i></button>
+            </div>
+            
+            <div class="task-input-container">
+                <input type="text" id="task-input" placeholder="What are you working on?">
+                <div class="pomodoro-counter">
+                    <button class="counter-btn" id="pomodoro-decrease"><i class="fas fa-chevron-down"></i></button>
+                    <span id="pomodoro-count">1</span>
+                    <button class="counter-btn" id="pomodoro-increase"><i class="fas fa-chevron-up"></i></button>
+                </div>
+                <button id="add-task-btn"><i class="fas fa-plus"></i></button>
+            </div>
+            
+            <div id="tasks-list" class="tasks-list">
+                <div class="task-item example-task">
+                    <div class="task-content">
+                        <i class="fas fa-circle task-icon"></i>
+                        <span class="task-name">Add your first task</span>
+                    </div>
+                    <div class="task-stats">
+                        <span class="pomodoro-count">0/1</span>
+                        <button class="task-menu-btn"><i class="fas fa-ellipsis-v"></i></button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="add-task-placeholder">
+                <i class="fas fa-plus"></i>
+                <span>Add Task</span>
+            </div>
+        </div>
+
+        <div class="completion-info">
+            <div class="completion-time">
+                <i class="fas fa-clock"></i>
+                <span>Estimated completion: <span id="completion-time">--:--</span></span>
+            </div>
+            <div class="total-pomodoros">
+                <i class="fas fa-tasks"></i>
+                <span>Total Pomodoros: <span id="total-count">0</span></span>
+            </div>
+        </div>
+    </main>
+
+    <!-- Task Menu -->
+    <div id="task-menu" class="task-menu">
+        <div class="task-menu-content">
+            <button class="task-menu-option" id="edit-pomodoro-count">
+                <i class="fas fa-edit"></i>
+                Edit Pomodoros
+            </button>
+            <button class="task-menu-option delete-option" id="delete-task">
+                <i class="fas fa-trash"></i>
+                Delete Task
+            </button>
+        </div>
+    </div>
+
+    <!-- Settings Modal -->
+    <div id="settings-modal" class="settings-modal">
+        <div class="settings-content">
+            <div class="settings-header">
+                <h2>Settings</h2>
+                <button class="close-btn" id="close-settings">&times;</button>
+            </div>
+            <div class="settings-body">
+                <div class="setting-group">
+                    <label>Timer Durations:</label>
+                    <div class="timer-settings">
+                        <div class="timer-setting-item">
+                            <label>Pomodoro (minutes):</label>
+                            <div class="time-selector">
+                                <button class="time-btn" id="pomodoro-decrease-time">
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <span id="pomodoro-time-display">45</span>
+                                <button class="time-btn" id="pomodoro-increase-time">
+                                    <i class="fas fa-chevron-up"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="timer-setting-item">
+                            <label>Short Break (minutes):</label>
+                            <div class="time-selector">
+                                <button class="time-btn" id="short-break-decrease-time">
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <span id="short-break-time-display">15</span>
+                                <button class="time-btn" id="short-break-increase-time">
+                                    <i class="fas fa-chevron-up"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="timer-setting-item">
+                            <label>Long Break (minutes):</label>
+                            <div class="time-selector">
+                                <button class="time-btn" id="long-break-decrease-time">
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <span id="long-break-time-display">30</span>
+                                <button class="time-btn" id="long-break-increase-time">
+                                    <i class="fas fa-chevron-up"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="setting-group">
+                    <label for="bg-color-picker">Background Color:</label>
+                    <div class="color-options">
+                        <div class="color-option" data-color="red" style="background: linear-gradient(135deg, #d73e3e 0%, #b71c1c 100%);"></div>
+                        <div class="color-option" data-color="blue" style="background: linear-gradient(135deg, #1976d2 0%, #0d47a1 100%);"></div>
+                        <div class="color-option" data-color="green" style="background: linear-gradient(135deg, #388e3c 0%, #1b5e20 100%);"></div>
+                        <div class="color-option" data-color="purple" style="background: linear-gradient(135deg, #7b1fa2 0%, #4a148c 100%);"></div>
+                        <div class="color-option" data-color="orange" style="background: linear-gradient(135deg, #f57c00 0%, #e65100 100%);"></div>
+                        <div class="color-option" data-color="teal" style="background: linear-gradient(135deg, #00695c 0%, #004d40 100%);"></div>
+                    </div>
+                </div>
+                <div class="setting-group">
+                    <label>
+                        <input type="checkbox" id="auto-switch" checked>
+                        Auto-switch between work and break
+                    </label>
+                </div>
+                <div class="setting-group">
+                    <label>
+                        <input type="checkbox" id="sound-enabled" checked>
+                        Enable chime sounds
+                    </label>
+                </div>
+                <div class="setting-group">
+                    <label>
+                        <input type="checkbox" id="animations-enabled" checked>
+                        Enable background animations
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
