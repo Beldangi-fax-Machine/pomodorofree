@@ -88,10 +88,6 @@ class PomodoroTimer {
         this.pomodoroDecreaseBtn.addEventListener('click', () => this.adjustPomodoroCount(-1));
         this.pomodoroIncreaseBtn.addEventListener('click', () => this.adjustPomodoroCount(1));
         
-        // Add task placeholder click
-        document.querySelector('.add-task-placeholder').addEventListener('click', () => {
-            this.taskInput.focus();
-        });
         
         // Settings events
         this.settingsBtn.addEventListener('click', () => this.openSettings());
