@@ -8,7 +8,7 @@ A beautiful, feature-rich Pomodoro timer built with vanilla HTML, CSS, and JavaS
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
 
 ## Features
-
+jorking it to Claude ai right now 
 ### Core Timer Functionality
 - **45-minute work sessions** (customizable)
 - **15-minute short breaks**
