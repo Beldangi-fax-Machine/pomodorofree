@@ -7,6 +7,19 @@ A beautiful, feature-rich Pomodoro timer built with vanilla HTML, CSS, and JavaS
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
 
+
+
+
+https://beldangi-fax-machine.github.io/pomodorofree/
+https://beldangi-fax-machine.github.io/pomodorofree/
+https://beldangi-fax-machine.github.io/pomodorofree/
+https://beldangi-fax-machine.github.io/pomodorofree/
+https://beldangi-fax-machine.github.io/pomodorofree/
+
+https://beldangi-fax-machine.github.io/pomodorofree/
+
+https://beldangi-fax-machine.github.io/pomodorofree/v
+ tyou can take this jonh right here and mske it better type shit 
 ## Features
 
 ### Core Timer Functionality
